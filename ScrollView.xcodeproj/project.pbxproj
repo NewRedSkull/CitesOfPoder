@@ -23,6 +23,27 @@
 		B5CE222121DBF976000B20C3 /* 7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5CE221F21DBF976000B20C3 /* 7.mp3 */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		B585671D21EF23A0007FC67A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+		B585671E21EF23A1007FC67A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXContainerItemProxy section */
 		B5CE21F821DBC22A000B20C3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -158,6 +179,8 @@
 				B5CE21E121DBC225000B20C3 /* Resources */,
 			);
 			buildRules = (
+				B585671E21EF23A1007FC67A /* PBXBuildRule */,
+				B585671D21EF23A0007FC67A /* PBXBuildRule */,
 			);
 			dependencies = (
 			);

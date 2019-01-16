@@ -47,7 +47,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="10"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="&quot;Страшна японська музика...&quot;">
+                                                <state key="normal" title="Страшна японська музика...">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
