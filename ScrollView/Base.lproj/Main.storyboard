@@ -148,6 +148,17 @@
                                                     <action selector="ButtonStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uNZ-g9-BW8"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iq-PB-7ud">
+                                                <rect key="frame" x="151" y="903" width="73" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Не чіпати!">
+                                                    <color key="titleColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonDont2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="13J-sb-3cM"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -207,6 +218,7 @@
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="ButtonDohuaOutlet" destination="B3q-2Z-LoY" id="a4s-KL-ekf"/>
+                        <outlet property="ButtonDont" destination="6iq-PB-7ud" id="ZyV-9R-5qD"/>
                         <outlet property="ButtonHamletOutlet" destination="Eoh-F3-G3a" id="M94-G6-WwH"/>
                         <outlet property="ButtonScaryOutlet" destination="6jc-mk-gr3" id="CoH-g7-STg"/>
                         <outlet property="ButtonShitOutlet" destination="mjL-SZ-bnb" id="yzS-L5-EVJ"/>

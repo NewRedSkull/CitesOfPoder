@@ -48,6 +48,17 @@ class ViewController: UIViewController {
         viewDidLoad()
         player.play()
     }
+    @IBOutlet weak var ButtonDont: UIButton!
+    
+    @IBAction func ButtonDont2(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Тобі сказали не чіпати?", message: "То нащо ти то робиш?", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Пойняв(", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Вибачте(", style: .cancel, handler: nil))
+        
+        self.present(alert, animated: true)
+        
+    }
     
     @IBAction func ButtonDohua(_ sender: UIButton) {
         audioPath = Bundle.main.path(forResource: "7", ofType: "mp3")
@@ -78,6 +89,10 @@ class ViewController: UIViewController {
         ButtonHamletOutlet.layer.cornerRadius = 15
         StopButtonOutlet.layer.cornerRadius = 15
         OnceMoreButtonOutlet.layer.cornerRadius = 15
+        ButtonDont.layer.cornerRadius = 11
+        
+        
+        
         
         
         do{

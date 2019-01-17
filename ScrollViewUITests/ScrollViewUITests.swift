@@ -47,5 +47,18 @@ class ScrollViewUITests: XCTestCase {
     attachment.lifetime = .keepAlways
     XCTAssert(scrollViewsQuery.otherElements.buttons["ЩЕ РАЗ"].isHittable)
     }
+    
+    func testPopup() {
+        let scrollViewsQuery = XCUIApplication().scrollViews
+        let popupButton = scrollViewsQuery.otherElements.buttons["Не чіпати!"]
+        while !popupButton.isHittable {
+            app.swipeUp()
+        }
+        popupButton.tap()
+        sleep(1)
+        app.alerts["Тобі сказали не чіпати?"].buttons["Вибачте("].tap()
+        sleep(3)
+        XCTAssert(scrollViewsQuery.otherElements.buttons["ЩЕ РАЗ"].isHittable)
+    }
 
 }
